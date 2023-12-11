@@ -20,6 +20,9 @@ int main(int argc, char* argv[])
     catch(const std::exception& e)
     {
         std::cerr << e.what() << '\n';
+        std::cerr << "Try: ./Dictionary [input] [dictionary] [output] [new_dict].\n";
+
+        return 1;
     }
 
     return 0;

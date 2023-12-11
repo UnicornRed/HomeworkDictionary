@@ -25,7 +25,7 @@ void CheckingText::ReadDict(const std::string& filename)
     std::ifstream in(filename);
 
     if (!in.is_open())
-        throw std::ios_base::failure("Error filename! Dictionary " + filename + " was not open.");
+        throw std::ios_base::failure("Error filename of dictionary! Dictionary " + filename + " was not open");
 
     in >> dict;
 
@@ -98,17 +98,17 @@ void CheckingText::Check(const std::string& fileInput, const std::string& fileOu
     std::ifstream in(fileInput);
 
     if (!in.is_open())
-        throw std::ios_base::failure("Error filename! File " + fileInput + " was not open.");
+        throw std::ios_base::failure("Error input filename! File " + fileInput + " was not open");
 
     std::ofstream out(fileOutput);
 
     if (!out.is_open())
-        throw std::ios_base::failure("Error filename! File " + fileOutput + " was not open.");
+        throw std::ios_base::failure("Error output filename! File " + fileOutput + " was not open");
 
     std::ofstream outNewDict(fileNewDict);
 
     if (!outNewDict.is_open())
-        throw std::ios_base::failure("Error filename! File " + fileNewDict + " was not open.");
+        throw std::ios_base::failure("Error filename of new dictionary! File " + fileNewDict + " was not open");
 
     std::string buff, word;
     size_t pos1, pos2;
