@@ -89,6 +89,8 @@ std::string CheckingText::CheckWord(const std::string& word)
             break;
         }
     }
+
+    return "";
 }
 
 void CheckingText::Check(const std::string& fileInput, const std::string& fileOutput, const std::string& fileNewDict)

@@ -3,4 +3,4 @@
 /checkingText.d
 /dictionary.d
 /main.d
-/obj
+*.o
